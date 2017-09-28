@@ -23,7 +23,7 @@ const users = require('./routes/users');
 
 
 // Port Nr
-const port = 3000;
+const port = process.env.PORT || 8080;
 
 // Access from Domain * through Cors Middleware
 app.use(cors());
